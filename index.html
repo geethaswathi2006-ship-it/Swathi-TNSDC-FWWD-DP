@@ -8,39 +8,111 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Named Data Table</title>
+    <title>Creative Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
-    <table id="myDataTable">
+    <!-- Navigation -->
 
-        <caption>Employee Data</caption>
+    <nav>
 
-        <thead>
+        <div class="logo">My Portfolio</div>
 
-            <tr>
+        <ul class="nav-links">
 
-                <th>ID</th>
+            <li><a href="#home">Home</a></li>
 
-                <th>Name</th>
+            <li><a href="#about">About</a></li>
 
-                <th>Department</th>
+            <li><a href="#portfolio">Portfolio</a></li>
 
-            </tr>
+            <li><a href="#contact">Contact</a></li>
 
-        </thead>
+        </ul>
 
-        <tbody>
+    </nav>
 
-            <!-- Table data will be populated here by JavaScript -->
+    <!-- Hero Section -->
 
-        </tbody>
+    <section id="home" class="section">
 
-    </table>
+        <h1>Welcome to My Portfolio</h1>
+
+        <p>Creative professional showcasing my work</p>
+
+        <a href="#portfolio" class="cta-button">See My Work</a>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <p>I'm a creative professional with skills in graphic design and photography. I love turning ideas into reality.</p>
+
+    </section>
+
+    <!-- Portfolio Section -->
+
+    <section id="portfolio" class="section">
+
+        <h2>My Work</h2>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-item">
+
+                <img src="https://via.placeholder.com/200" alt="Project 1">
+
+                <p>Project 1: Graphic Design</p>
+
+            </div>
+
+            <div class="portfolio-item">
+
+                <img src="https://via.placeholder.com/200" alt="Project 2">
+
+                <p>Project 2: Photography</p>
+
+            </div>
+
+            <div class="portfolio-item">
+
+                <img src="https://via.placeholder.com/200" alt="Project 3">
+
+                <p>Project 3: Illustration</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="section">
+
+        <h2>Contact Me</h2>
+
+        <form id="contact-form">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send</button>
+
+        </form>
+
+    </section>
 
     <script src="script.js"></script>
 
